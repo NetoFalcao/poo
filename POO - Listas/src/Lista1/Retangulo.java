@@ -17,7 +17,7 @@ public class Retangulo {
 	
 	@Override
 	public String toString(){
-		String mensagem = "Largura: " + largura + "Altura: " + altura;
+		String mensagem = "Largura: " + largura + " Altura: " + altura;
 		return mensagem;
 	}
 
@@ -49,12 +49,12 @@ public class Retangulo {
 		return altura;
 	}
 	
-	public int perimetroRetangulo(int largura, int altura){
+	public int perimetroRetangulo(){
 		int resultado = 2*(altura+largura);
 		return resultado;
 	}
 	
-	public int areaRetangulo(int largura, int altura){
+	public int areaRetangulo(){
 		int resultado = altura*largura;
 		return resultado;
 	}
