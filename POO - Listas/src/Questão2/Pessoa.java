@@ -16,12 +16,12 @@ public class Pessoa {
 		sexo = "";
 	}
 	
-	public Pessoa(String nome, int idade, double altura, double peso, String sexo){
-		nome = nome;
-		idade = idade;
-		altura = altura;
-		peso = peso;
-		sexo = sexo;
+	public Pessoa(String nome1, int idade1, double altura1, double peso1, String sexo1){
+		nome = nome1;
+		idade = idade1;
+		altura = altura1;
+		peso = peso1;
+		sexo = sexo1;
 	}
 	
 	public void alteraNome(String novoNome){
