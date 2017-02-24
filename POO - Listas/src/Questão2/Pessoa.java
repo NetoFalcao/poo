@@ -9,7 +9,7 @@ public class Pessoa {
 	
 	
 	public Pessoa(){
-		nome = "";
+		nome = "Nulo";
 		idade = 0;
 		altura = 0;
 		peso = 0;
@@ -69,5 +69,19 @@ public class Pessoa {
 		double resultado = peso/(altura*altura);
 		return resultado;
 	}
+	
+	public String toString(){
+		if (this.IMC() <= 18.5){
+			return this.nome + " || Abaixo do Peso normal.";
+		} else if (this.IMC() > 18.5 && this.IMC() <= 25){
+			return this.nome + " || Peso normal";
+		} else if (this.IMC()> 25 && this.IMC() <= 30){
+			return this.nome + " || Acima do Peso normal";
+		} else{
+			return this.nome  + " || Obesidade";
+		}
+	}
+	
+	
 	
 }
