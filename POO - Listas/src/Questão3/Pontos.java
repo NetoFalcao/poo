@@ -1,8 +1,5 @@
 package Questão3;
 
-import java.util.List;
-import java.util.ArrayList;
-
 public class Pontos {
 	
 	private int x;
@@ -34,17 +31,12 @@ public class Pontos {
 		return y;
 	}
 
-
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
+		Pontos outro = (Pontos) obj;
+		if (x != outro.x)
 			return false;
-		Pontos other = (Pontos) obj;
-		if (x != other.x)
-			return false;
-		if (y != other.y)
+		if (y != outro.y)
 			return false;
 		return true;
 	}
